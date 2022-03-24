@@ -1,5 +1,5 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-brainlife.app.185-blue.svg)](https://doi.org/10.25663/brainlife.app.612)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-brainlife.app.612-blue.svg)](https://doi.org/10.25663/brainlife.app.612)
 
 # Compute dice similarity between parcels within parcellations
 
@@ -26,7 +26,7 @@ The main output of this app is a .csv file that documents the dice coefficient f
 
 ### On Brainlife.io
 
-You can submit this App online at [https://doi.org/10.25663/brainlife.app.185](https://doi.org/10.25663/brainlife.app.612) via the 'Execute' tab.
+You can submit this App online at [https://doi.org/10.25663/brainlife.app.612](https://doi.org/10.25663/brainlife.app.612) via the 'Execute' tab.
 
 ### Running Locally (on your machine)
 
