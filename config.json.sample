@@ -1,0 +1,12 @@
+{
+	"parc_compare":	"testdata/compare/parc.nii.gz",
+	"parc_reference":	"testdata/reference/parc.nii.gz",
+	"labels":	"testdata/ashs/label.json",
+	"_inputs": [
+			{
+					"meta": {
+							"subject": "sample"
+						}
+					}
+				]
+}
