@@ -79,8 +79,8 @@ The secondary output of this app is `product.json`. This file allows web interfa
 This App requires the following libraries when run locally.
 
   - singularity: https://singularity.lbl.gov/
-  - Python3:
-  - Nibabel:
-  - Pandas:
+  - Python3: https://www.python.org/downloads/
+  - Nibabel: https://nipy.org/nibabel/
+  - Pandas: https://pandas.pydata.org/
   - jsonlab: https://github.com/fangq/jsonlab.git
-  - numpy:
+  - numpy: https://numpy.org/
