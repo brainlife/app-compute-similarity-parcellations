@@ -3,6 +3,27 @@
 
 # Compute dice similarity between parcels within parcellations
 
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+**Computes the Dice similarity coefficient of each parcel between a parcellation and a reference parcellation with nibabel and numpy, and outputs a per-parcel csv.**
+
+For each label in the reference image, binarizes that label in both parcellations and computes Dice = 2\|A∩B\|/(\|A\|+\|B\|), writing subjectID, structureID (from the reference label.json), nodeID and dice to parcellation.csv. Both parcellations must be on the same voxel grid and share label values.
+
+Run it on brainlife.io: [https://doi.org/10.25663/brainlife.app.612](https://doi.org/10.25663/brainlife.app.612)
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `parc_compare` | `neuro/parcellation/volume` | yes | This is the path to the parcellation you would like to compare to the reference parcellation. Same voxel grid and label numbering as the reference parcellation. |
+| `parc_reference` | `neuro/parcellation/volume` | yes | This is the path to the reference parcellation |
+
+| Output | Datatype | Description |
+|---|---|---|
+| `parc_stats` | `neuro/parc-stats` | parcellation.csv with one row per reference parcel: subjectID, structureID, nodeID and dice coefficient. |
+
+Runtime: container `brainlife/dipy:1.4.1`; 1 CPUs; 16 GB memory; 0.5 h walltime.
+
+<!-- brainlife-app:end -->
+
 This app will compute the dice similarity between parcels within parcellations. This app takes input a parcellation (parc_compare), whose date will be compared to the reference parcellation.
 The main output of this app is a .csv file that documents the dice coefficient for each parcel.
 
